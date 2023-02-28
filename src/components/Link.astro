@@ -1,0 +1,13 @@
+---
+    export interface Props extends astroHTML.JSX.AnchorHTMLAttributes { }
+
+    const { href, ...props } = Astro.props;
+
+    const { pathname } = Astro.url;
+---
+
+<a href={href}>
+    <slot />
+    {props.title}
+    <span class="tiny"> ({props.children})</span>
+</a>

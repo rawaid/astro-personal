@@ -1,0 +1,82 @@
+---
+    import BaseHead from '../components/BaseHead.astro';
+    import Header from '../components/Header.astro';
+    import Link from '../components/Link.astro';
+
+    import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+        hr {
+            border-top: 1px solid #ddd;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <Header />
+    <main>
+        <div class="cool">
+            <span class="cooltext">my biggest problem with the reality we live in is that there is simply too much cool
+                stuff and i want
+                to consume all of it and share all of it with everyone i know.</span>
+            <span class="cooltext">i miss the good ole days where I could go to my friends house with a hard drive and
+                they could give me
+                all the music they torrented that i'd never heard of before,</span>
+            <span class="cooltext">and we could swap tastes and be stoked on everything we come across.</span>
+            <span class="cooltext">nowadays, that hard drive or usb or burned cd is a link or a DM that gets forgotten
+                about almost
+                immediately - makes me sad!!!</span>
+            <span class="cooltext">so here is my cool stuff page on ali.com - a sort of personal internet graveyard - I
+                want to add all
+                the stuff i think is worth sharing and obsessing over.</span>
+            <span class="cooltext">maybe you click it maybe you don't but it's here for me and it's here for
+                you.</span>
+            <span class="cooltext tiny">(i'm still building this, so there will be more later, but here's what's up for
+                now)</span>
+        </div>
+        <hr />
+        <div class="stuff">
+            <div class="head">Music</div>
+            <Link href="https://www.youtube.com/watch?v=gV7VeyEX0XY" title="MJ Lenderman - TLC Cagematch"
+                children="never thought a song about wrestling would make me feel" />
+            <Link href="https://www.youtube.com/watch?v=meW3Y_yLlWI" title="Aphex Twin - Flim"
+                children="this is skrillexn&#39;s fave song and thatn&#39;s funny" />
+            <Link href="https://www.youtube.com/watch?v=1hXQhle7M5c" title="Yves Tumor - The Feeling When You Walk Away"
+                children="catchiest guitar groove" />
+            <Link href="https://www.youtube.com/watch?v=F5PbPtZ1p2o" title="Yukihiro Takahashi - Drip Dry Eyes"
+                children="rip king" />
+            <Link href="https://www.youtube.com/watch?v=1hXQhle7M5c"
+                title="Jeff Parker - ETA IVtet Mondays at The Enfield Tennis Academy Side B"
+                children="best record I bought last year" />
+            <div class="head">Words</div>
+            <Link href="https://pitchfork.com/thepitch/hua-hsus-memoir-stay-true-is-as-affecting-as-a-great-pop-song/"
+                title="Hua Tsu - Stay True"
+                children="I almost never finish memoirs, this was capitvating start to finish. Highly recommend for anyone coming from an immigrant fam that loves music" />
+            <Link href="https://twodollarradio.com/products/they-cant-kill-us"
+                title="Hanif Abdurraqib - They Cant Kill Us Until They Kill Us"
+                children="Powerful, Hanif has become my favorite writer in the past year" />
+
+            <hr />
+            <div class="head">Movies</div>
+            <Link href="https://www.youtube.com/watch?v=6BPKPb_RTwI" title="Drive My Car"
+                children="It&#39;s a long one but I want to live in this movie" />
+            <Link href="https://www.youtube.com/watch?v=uRu3zLOJN2c" title="The Banshees of Inishirin"
+                children="In Bruges is one of my all time faves, so get this trio of director/actors together again is a blessing" />
+
+            <Link href="https://www.youtube.com/watch?v=Bmoy73lhs-s" title="Decision to Leave"
+                children="Haven&#39;t stopped thinking about this since I saw it... so good" />
+            <Link href="https://www.youtube.com/watch?v=PVnIMvVEkrA" title="Infinity Pool"
+                children="Mia Goth is taking over as the most insane horror movie actress and I&#39;m here for it. Skaarsgaard is great too and the Tim Hecker soundtrack knocks it out of the park, this is a must see" />
+
+        </div>
+    </main>
+</body>
+
+</html>

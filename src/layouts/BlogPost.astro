@@ -1,0 +1,37 @@
+---
+	import type { CollectionEntry } from 'astro:content';
+	import BaseHead from '../components/BaseHead.astro';
+	import Header from '../components/Header.astro';
+
+	type Props = CollectionEntry<'blog'>['data'];
+
+	const { title, description } = Astro.props;
+---
+
+<html lang="en">
+
+<head>
+	<BaseHead title={title} description={description} />
+	<style>
+		.title {
+			font-size: 2em;
+			margin: 0.25em 0 0;
+		}
+
+		hr {
+			border-top: 1px solid #ddd;
+			margin: 1rem 0;
+		}
+	</style>
+</head>
+
+<body>
+	<Header />
+	<main>
+		<article>
+			<slot />
+		</article>
+	</main>
+</body>
+
+</html>
